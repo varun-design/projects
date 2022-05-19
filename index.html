@@ -1,12 +1,1221 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
+    <title>CSS 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Varun Goel</h1>
-</body>
-</html>
+	<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">   
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="./assets/js/js1-11-3.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+    <script>
+	
+	$(function() {
+   $('.sidebar ul li a').click(function() {
+       $('.sidebar ul li a').removeClass('active');
+       $(this).addClass('active');
+   });
+});
+	</script>
+	
+	</head>
+	
+	<body>		
+
+		<header id="header">
+			<div class="innertube">
+				<nav class="navbar navbar-default navbar-fixed-top custom_nav">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">CSS<i class="fa fa-css3 fa-lg fa-fw"></i> Training <span class="hide">LEARNER</span></a>
+		</div>
+		<div id="navbarCollapse" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Basic Properties<i class="fa fa-angle-down fa-fw "></i></a>
+					<ul class="dropdown-menu">
+						<li><a href="#float" ><i class="fa fa-hand-o-right fa-fw"></i> Float</a></li>
+						<li><a href="#background"><i class="fa fa-hand-o-right fa-fw"></i> Background</a></li>
+						<li><a href="#border"><i class="fa fa-hand-o-right fa-fw"></i> Border</a></li>
+						<li><a href="#color_ex"><i class="fa fa-hand-o-right fa-fw"></i> Color</a></li>
+						<li><a href="#font_ex"><i class="fa fa-hand-o-right fa-fw"></i> Font</a></li>
+						 <li><a href="#dimension_ex"><i class="fa fa-hand-o-right fa-fw"></i>Css Dimension</a></li>
+						<li><a href="#list_ex"><i class="fa fa-hand-o-right fa-fw"></i> List</a></li>
+						<li><a href="#display_ex"><i class="fa fa-hand-o-right fa-fw"></i> Display</a></li>
+						<li><a href="#text_ex"><i class="fa fa-hand-o-right fa-fw"></i> Text</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Advanced Properties<i class="fa fa-angle-down fa-fw "></i></a>
+					<ul class="dropdown-menu">
+						<li><a href="#position_ex"><i class="fa fa-hand-o-right fa-fw"></i> Position</a></li>
+						<li><a href="#pseudo_ex"><i class="fa fa-hand-o-right fa-fw"></i> Pseudo Class & Element</a></li>
+						<li><a href="#table_ex"><i class="fa fa-hand-o-right fa-fw"></i> Table</a></li>
+						<li><a href="#grad_ex"><i class="fa fa-hand-o-right fa-fw"></i> Gradient</a></li>
+						<li><a href="#cursor_ex"><i class="fa fa-hand-o-right fa-fw"></i> Cursor</a></li>
+						<li><a href="#round_ex"><i class="fa fa-hand-o-right fa-fw"></i> Rounded corners</a></li>
+						<li><a href="#shadow_ex"><i class="fa fa-hand-o-right fa-fw"></i> Box shadow</a></li>
+						<li><a href="#txtshadow_ex"><i class="fa fa-hand-o-right fa-fw"></i> Text shadow</a></li>
+						<li><a href="#multiCol_ex"><i class="fa fa-hand-o-right fa-fw"></i> Multi column</a></li>
+						<li><a href="#transform_ex"><i class="fa fa-hand-o-right fa-fw"></i> Transform</a></li>
+						<li><a href="#transition_ex"><i class="fa fa-hand-o-right fa-fw"></i> Transition</a></li>
+						<li><a href="#animation_ex"><i class="fa fa-hand-o-right fa-fw"></i> Animation</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+			</div>
+		</header>
+				
+		<main id="main">
+			<div class="innertube">
+				 <div class="wrapper">
+				  <section id="float">
+                <h2>Float Property</h2>
+                <p>Floating is used when there is a need for wrapping one element around another. It is often used for website layouts and is often applied to images as well. When an image is floated to the left, any text that appears after the floated image will appear to the right of that image. Similarly, an image floated to the right, will have any text that follows appear to the left of that image. Floating elements is a natural process when building a website's layout, and is the instinctive method for positioning elements on a page. Floats allow elements to appear next to, or apart from, one another. They provide the ability to build a natural flow within a layout and allow elements to interact with one another based on their size and the size of their containing parent.</p>
+                <div class="float">
+                    <div> Box 1 </div>
+                    <div>Box 2 </div>
+                    <div>Box 3 </div>
+					</div>
+
+                    <pre class="text-primary">
+.float div{ 
+margin: 1.8%;
+width: 29.6%;
+float:left;
+padding:1%;
+border: 1px solid #fff;
+} 
+					</pre>
+                      <p>Another Example</p>
+                      <div class="float row">
+                          <p style="float: left; border: 1px solid #fff;padding: 15px 50px;">Box 1</p>
+                          <p style="float: right; border: 1px solid #fff;padding: 15px 50px;">Box 2</p>
+                      </div>
+                                          <pre class="text-primary">
+.float div1{
+float:left;
+padding: 15px 50px;
+border: 1px solid #fff;
+}
+.float div2{
+float:right;
+padding: 15px 50px;
+border: 1px solid #fff;
+} 					</pre>
+                
+            </section>
+            <section id="background">
+                <h2>Background Property</h2>
+                <div class=" row">
+				<div class=" background">
+                    <div class="background-text">
+                    <pre class="text-primary">
+{ 
+background-image: url("./assets/images/tree.png");
+background-repeat:no-repeat; 
+background-position: right center;
+height:160px;	
+width:45%;
+float:right;
+}
+					</pre>
+                    </div>
+                    
+
+                
+                <div class="background-imageSet"><p>You can set the following background properties of an element - <br/><br/>
+				<i class="fa fa-hand-o-right fa-fw"></i>The <strong>background-color property </strong>is used to set the background color of an element. <br/><br/>
+				<i class="fa fa-hand-o-right fa-fw"></i>The <strong>background-image property</strong> is used to set the background image of an element.<br/><br/>
+				<i class="fa fa-hand-o-right fa-fw"></i>The <strong>background-repeat property </strong>is used to control the repetition of an image in the background. <br/><br/>
+				<i class="fa fa-hand-o-right fa-fw"></i>The <strong>background-position property</strong> is used to control the position of an image in the background.<br/><br/>
+				<i class="fa fa-hand-o-right fa-fw"></i>The <strong>background-attachment property</strong> is used to control the scrolling of an image in the background.<br/> <br/> 
+				<i class="fa fa-hand-o-right fa-fw"></i>The <strong>background property</strong> is used as a shorthand to specify a number of other background properties.<br/><br/>
+                </p></div>
+
+				</div>
+                    <div style="background: #000 url(tree.png) no-repeat left top; height: 100px; width: 100%; padding:2%;">
+
+                      <p> Shorthand for Background<br/>
+                        background: #000 url(tree.png) no-repeat left top;</p>
+                    </div>
+				</div>
+            </section>
+			     <section id="border">
+                <h2>Border Property</h2>
+				<p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+                <div class="border">
+				<pre class="text-primary">
+border .dotted {border-style: dotted;}
+border .dashed {border-style: dashed;}
+border .solid {border-style: solid;}
+border .double {border-style: double;}
+border .groove {border-style: groove;}
+border .ridge {border-style: ridge;}
+border .inset {border-style: inset;}
+border .outset {border-style: outset;}
+border .none {border-style: none;}
+border .hidden {border-style: hidden;}
+border .mix {border-style: dotted dashed solid double;}
+				</pre>
+                <p>This property specifies what kind of border to display:</p>
+					<p class="dotted">A dotted border.</p>
+					<p class="dashed">A dashed border.</p>
+					<p class="solid">A solid border.</p>
+					<p class="double">A double border.</p>
+					<p class="groove">A groove border.</p>
+					<p class="ridge">A ridge border.</p>
+					<p class="inset">An inset border.</p>
+					<p class="outset">An outset border.</p>
+					<p class="none">No border.</p>
+					<p class="hidden">A hidden border.</p>
+					<p class="mix">A mixed border.</p>
+                </div>
+               </section>
+            <section id="color_ex">
+                <h2>Color Property</h2>
+                <p>CSS uses color values to specify a color. Typically, these are used to set a color either for the foreground of an element (i.e., its text) or else for the background of the element. They can also be used to affect the color of borders and other decorative effects.</p>
+                <p>NOTE: All the browsers does not support rgb() property of color so it is recommended not to use it.</p>
+                <p>Gradients displays the combination of two or more colors</p>
+                <p>The 17 standard colors are: aqua, black, blue, fuchsia, gray, grey, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow. </p>
+                <div class="color-ex">
+                    <div class="color-circle">
+                        <div class="r-circle"><span>R</span>
+                        </div>
+                        <div class="g-circle"><span>G</span>
+                        </div>
+                        <div class="b-circle"><span>B</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>RGB</li>
+                        <li>RGBA</li>
+                        <li>Hex</li>
+                        <li>HSL</li>
+                        <li>HSLA</li>
+                        <li>Opacity</li>
+                    </ul><br/>
+					<pre class="text-primary">
+{
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0,0.2);
+background-color: #4d4d4d;
+background-color: hsl(0, 0%, 0%);
+background-color: hsla(0, 0%, 0%, 0.4);
+background-color: rgb(0, 0, 0);
+opacity: 0.2;
+}
+				    </pre>
+                </div>
+					
+            </section>
+            <section id="font_ex">
+                <h2>Css Fonts </h2>
+                <p>
+                    <br/>The <strong>font-family property</strong> is used to change the face of a font.
+                    <br/>
+                    <br/>The <strong>font-style property</strong> is used to make a font italic or oblique.
+                    <br/>
+                    <br/>The <strong>font-variant property</strong> is used to create a small-caps effect.
+                    <br/>
+                    <br/>The <strong>font-weight property </strong> is used to increase or decrease how bold or light a font appears.
+                    <br/>
+                    <br/>The <strong>font-size property </strong>is used to increase or decrease the size of a font.
+                    <br/>
+                    <br/>The <strong>font property</strong> is used as shorthand to specify a number of other font properties.
+                    <br/>
+                    <br/>
+                    <br/>
+                </p>
+                <div class="ex_font">
+                    <p style="font: italic bold 20px/1.2 Arial, sans-serif;"> This is example where we used shorthand for font.</p>
+
+                    <p>font-style: italic;<br/>
+                        font-weight: bold;<br/>
+                        font-size: 20px;<br/>
+                        line-height: 1.2;<br/> Use shortand <br/>
+                        font-family: Arial, sans-serif;<br/>font: italic bold 20px/1.2 Arial, sans-serif</p>
+                </div>
+                <div class="font-ex">
+                    <p>
+                       This is a paragraph shown in Lato font.
+                    </p>
+                    <pre class="text-primary">
+.font-ex p{
+font:italic small-caps bold 18px Lato;
+text-align:center;
+}
+
+p.serif {
+font-family: "Times New Roman", Times, serif;
+ font-variant: normal;
+}
+p.sansserif {
+font-family: Helvetica, Arial, sans-serif;
+}
+p.monospace {
+font-family: "Courier New", Courier, monospace;
+font-variant: small-caps;
+}
+p.cursive {
+font-family: Florence, cursive;
+}
+p.fantasy {
+font-family: Blippo, fantasy;
+}
+
+				</pre>
+                </div>
+				
+				<p class="serif">
+   This is a paragraph shown in serif font.
+</p>
+<p class="sansserif ">
+   This is a paragraph shown in sans-serif font.
+</p> 
+<p class="monospace">
+   This is a paragraph shown in monospace font.
+</p> 
+<p class="cursive">
+   This is a paragraph shown in cursive font.
+</p> 
+<p class="fantasy">
+   This is a paragraph shown in fantasy font.
+</p> 
+            </section>
+			            <section id="dimension_ex">
+                <h2>CSS Dimension </h2>
+                <p>  
+					The <strong> line-height property </strong> is used to set the line height of a between text.<br/><br/>
+					The <strong> height property </strong> is used to set the height of a box.<br/><br/>
+					The<strong> width property </strong> is used to set the width of a box.<br/><br/>
+					The <strong> line-height property </strong> is used to set the height of a line of text.<br/><br/>
+					The <strong> max-height property </strong> is used to set a maximum height that a box can be.<br/><br/>
+					The <strong> min-height property </strong> is used to set the minimum height that a box can be.<br/><br/>
+					The <strong> max-width property </strong> is used to set the maximum width that a box can be.<br/><br/>
+					The <strong> min-width property </strong> is used to set the minimum width that a box can be.<br/><br/>
+
+                </p>
+                <div class="dimension-ex">
+                    <p>Example of Dimensions.</p>
+                    <pre class="text-primary">
+{ 
+	width:auto; 
+	height:auto;
+	border:1px solid #fff; 
+	padding:5px; 
+	margin:10px; 
+	line-height:40px;
+	max-height:150px;
+	min-width:250px;
+	overflow: auto;
+}
+					</pre>
+                </div>
+            </section>
+            <section id="list_ex">
+                <h2>LIST </h2>
+              <div class="list-ex">  
+                    <ul>
+                        <li> The <strong> list-style-type </strong> allows you to control the shape or appearance of the marker.</li>
+						<li> The <strong> list-style-position </strong> specifies whether a long point that wraps to a second line
+							  should align with the first line or start underneath the start of the marker.</li>
+						<li> The <strong> list-style-image </strong> specifies an image for the marker rather than a bullet point or number.</li>
+						<li> The <strong> list-style </strong> serves as shorthand for the preceding properties.</li>
+						<li> The <strong> marker-offset </strong> specifies the distance between a marker and the text in the list.</li>
+                       </ul> <br/>
+				     <pre class="text-primary">
+{ 
+list-style-type: square;
+list-style-position: inside;
+list-style-image: url('abc.png');
+}
+
+
+/*for shorthand*/
+{
+list-style: square inside url("abc.png");
+}
+					</pre>            
+				  <ul>
+                        <li>List 1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                    <ol>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                    </ol>
+                    <ol>
+                        <li>A
+                            <ul>
+                                <li>a</li>
+                                <li>b</li>
+                                <li>c</li>
+                            </ul>
+                        </li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ol>
+                </div>
+
+            </section>
+            <section id="display_ex">
+                <h2>Display Property</h2>
+                <p><strong>Inline elements:</strong>
+                    <br/> respect left & right margins and padding, but not top & bottom cannot have a width and height set. allow other elements to sit to their left and right.
+                    <br/>
+                    <br><strong>Block elements:</strong>
+                    <br/> respect all of those force a line break after the block element
+                    <br/>
+                    <br><strong>Inline-block elements:</strong>
+                    <br/> allow other elements to sit to their left and right respect top & bottom margins and padding respect height and width</p>
+			   <pre class="text-primary">
+{
+display: block/inline-block/inline;
+}
+			   </pre>               
+			   <div class="display-ex">
+                    <ul>
+                        <li class="displayblock">
+                            <div>Div-Block </div>
+                            <div>Block </div>
+                        </li>
+                        <li><span>span inline</span> <span>span inline</span>
+                        </li>
+                        <li class="inlineblock"><span>span inline block</span> <span>span inline block</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+			<section id="text_ex">
+			<h2>Text</h2>
+			<p>
+			Text properties are as follow: <br/>
+
+			text-overflow <br/>
+			word-wrap <br/>
+			word-break <br/>
+			</p>
+			
+			<pre>
+			
+p.text-clip,
+p.text-ellipsis,
+p.normal,
+p.text-wrap
+{
+width: 150px; 
+border: 1px solid #ccc;
+
+}
+p.normal{
+white-space: nowrap; 
+}
+p.text-clip {
+text-overflow: clip; 
+white-space: nowrap; 
+overflow: hidden;
+}
+p.text-ellipsis {
+text-overflow: ellipsis; 
+overflow: hidden;
+white-space: nowrap; 
+}
+p.text-wrap{
+word-wrap: break-word;
+word-break: break-all;
+white-space: normal;
+}
+		</pre>
+			<div class="text-ex">
+			<p class="normal" title="normal">This paragraph contains </p>
+			<p class="text-clip" title="clip">This paragraph contains </p>
+			<p class="text-wrap" title="wrap">This paragraph contains</p>
+			<p class="text-ellipsis" title="ellipsis">This paragraph contains</p>
+			</div>
+			
+			</section>
+
+            <section id="position_ex">
+                <h2>Position Property</h2>
+                <p>Positioning elements appropriately on the web pages is a necessity for a good layout design. There are several methods in CSS that you can use for positioning elements.</p>
+                <h3>Static Positioning</h3>
+                <p>A static positioned element is always positioned according to the normal flow of the page. HTML elements are positioned static by default. Static positioned elements are not affected by the top, bottom, left, right, and z-index properties.
+                </p>
+                <h3>Relative Positioning</h3>
+                <p>A relative positioned element is positioned relative to its normal position. In the relative positioning scheme the element's box position is calculated according to the normal flow. Then the box is shifted from this normal position according to the properties - top or bottom and/or left or right.
+                </p>
+                <h3>Absolute Positioning</h3>
+                <p>An absolutely positioned element is positioned relative to the first parent element that has a position other than static. If no such element is found, it will be positioned on a page relative to the 'top-left' corner of the browser window. The box's offsets further can be specified using one or more of the properties top, right, bottom, and left.
+                </p>
+                <h3>Fixed Positioning</h3>
+                <p>Fixed positioning is a subcategory of absolute positioning. The only difference is, a fixed positioned element is fixed with respect to the browser's viewport and does not move when scrolled.
+                </p>
+                <div class="position-ex">
+                    <ul>
+                        <li class="pos_static">
+                            <div>Static</div>
+                        </li>
+                        <li class="pos_relative">
+                            <div>Relative</div>
+                        </li>
+                        <li class="pos_absolute">
+                            <div>Absolute</div>
+                        </li>
+                        <li class="pos_fixed">
+                            <div>Fixed</div>
+                        </li>
+
+
+                    </ul>
+                </div>
+				<pre class="text-primary">
+{
+    position: static;		
+    border: 2px solid #fff;
+    left: 40px;
+}
+/* By default value is static. It can be fixed/absolute/reative as your requirement of an 
+   element  */				
+				
+				</pre>
+            </section>
+              
+            <section id="pseudo_ex">
+                <h2>:Pseudo Class</h2>
+                <p>The CSS pseudo-classes allow you to style the dynamic states of an element. For example, it can be used to:
+                    <br/> Style an element when a user mouse's over it.
+                    <br/> Style visited and unvisited links differently.
+                    <br/> Style an element when it gets focus.
+                    <br/>
+                    <pre class="text-primary">
+	a:link {color: #000000} ;
+	a:visited {color: #006600} ;
+	a:hover {color: #FFCC00} ;
+	a:active {color: #FF00CC} ;
+	p:first-child { color: blue;}
+					</pre>
+                </p>
+                <h2>::Pseudo Element</h2>
+                <p>The CSS pseudo-elements allow you to style the elements or parts of the elements without adding any IDs or classes to them.
+                    <br/> CSS3 introduced a new double-colon (::) syntax for pseudo-elements to distinguish between them and pseudo-classes.
+                    <br/> The new syntax of the pseudo-element can be given with:
+                    <br/> selector::pseudo-element { property: value; }
+                    <br/> The ::first-line pseudo-element applies special style to the first line of a text.
+                    <br/>
+                    <pre class="text-primary">
+p::first-line {
+color: #ff0000;
+font-variant: small-caps;
+}					</pre> 
+					::after, ::before,::first-letter are the pseudo elements.
+					</p>
+                <br/>
+                <div class="pseudo-ex">
+                    <ul>
+                        <li class="first-line">
+                            <p> ::First Line
+                                <br/> Data </p>
+                        </li>
+                        <li class="first-letter">
+                            <p> ::First Letter
+                                <br/>Data</p>
+                        </li>
+                        <li class="after-ex">
+                            <p> ::After
+                                <br/>Data </p>
+                        </li>
+                        <li class="before-ex">
+                            <p>::Before
+                                <br/> Data</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            <section id="table_ex">
+                <h2>Table Property</h2>
+                <p>Tables are a way to represent complex information in a grid format.
+                    <br/> Tables are made up of rows and columns.
+                    <br/> Tables can be styled with CSS to add zebra striping or to highlight important rows/columns.
+                </p>
+				
+				
+                <div class="table-ex">
+                    <table class="collapseTable">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>border-collapse
+                                </td>
+                                <td>Specifies whether table cell borders are connected or separated.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>border-spacing
+
+                                </td>
+                                <td>Sets the spacing between the borders of adjacent table cells.
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>caption-side
+
+                                </td>
+                                <td>Specify the position of table's caption.
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>empty-cells
+
+                                </td>
+                                <td>Show or hide borders and backgrounds of empty table cells.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>table-layout
+
+                                </td>
+                                <td>Specifies a table layout algorithm.
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><br/>
+						The table-layout Property
+
+						The table-layout specifies how the width of table columns is calculated. The possible values are:
+						auto - when column or cell width are not explicitly set, the column width will be in proportion to the amount of content in the cells that make up the column
+						fixed - when column or cell width are not explicitly set, the column width will not be affected by the amount of content in the cells that make up the column.
+
+						The table layout is set to auto by default. 
+<h2>Example:-</h2>
+The example below shows the difference between auto and fixed. 
+<p>Table-layout is set to <strong>auto</strong></p>
+<table class="auto table_ex ">
+  <tr>
+    <td width= 10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+
+<p>Table-layout is set to <strong>fixed</strong></p>
+<table class="fixed table_ex ">
+  <tr>
+    <td width="10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+
+				<br/>
+					<pre class="text-primary">
+.table_ex {
+border-collapse: separate;
+width: 100%;
+border: 1px solid gray;
+} 
+td {
+border: 1px solid gray;
+}
+table.auto {
+table-layout: auto;
+}
+table.fixed {
+table-layout: fixed;
+}
+
+
+
+table, th, td {
+border: 1px solid black;
+}
+
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+
+table, th, td {
+border: 1px solid black;
+}
+
+th {
+text-align: left;
+}
+
+td {
+height: 50px;
+vertical-align: bottom;
+}
+th, td {
+padding: 15px;
+text-align: left;
+}
+
+tr:hover {background-color: #f5f5f5;}
+					</pre>
+
+                    <table class="collapseTable">
+                        <caption>Table Caption</caption>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Varun</td>
+                                <td>varun@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Table with Hidden Empty-cells</h3>
+                    <table class="empty-hide">
+                        <tr>
+                            <th>Name</th>
+                            <td>Varun</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+			<section id="grad_ex">
+			<h2>Gradients</h2>
+					<p>
+						CSS3 gradients enable you to display smooth transitions between two or more specified colors. CSS3 defines two types of gradients: Linear and Radial. 
+						To create a linear gradient, you must define at least two color stops. Color stops are the colors among which you want to render smooth transitions. You can also set a starting point and a direction - or an angle - along with the gradient effect.
+						In the example below, the colors blue and black are used to create a linear gradient from top to bottom.
+<br/>
+						To create a radial gradient, you must define at least two color stops. 
+						The radial gradient is defined by its center.
+
+						The CSS syntax of the radial gradient looks like this:
+						background: radial-gradient(position, shape or size, color-stops);
+					</p><br/>
+					 <div  class="banner">
+						<div class="section-padding"><h1>Gradient Example</h1></div>
+					</div>
+				 <pre class="text-primary">
+In above example, we used radial gradient:-
+
+<strong>background-image: radial-gradient(40% 70%,#009688 15%,#004B44 100%)</strong>
+
+{
+margin: 5%;
+color: #fff;  
+background-image: linear-gradient(#009688, #004B44);
+border: 1px solid #ccc;
+}
+				</pre>
+				<div  class="linear-gradient">
+					<div class="section-padding"><h1>Linear Gradient </h1></div>
+				</div>
+			</section>
+			<section id="cursor_ex">
+			<h2>Cursor</h2>
+			<p>The cursor Property Values</p>
+			
+
+
+<p>There are numerous other possible values for the cursor property, such as:</p>
+default - default cursor, 
+crosshair - cursor displays as crosshair, 
+pointer - cursor displays hand icon <br/>
+<img class="img-responsive center-block" src="./assets/images/cursors.png"/><br/>
+
+<pre class="text-primary">
+{
+cursor: pointor;
+}
+{
+cursor: text;
+}
+{
+cursor: crosshair;
+}
+</pre>
+
+			<div class="section-padding section-cursor"> 
+			<div class="cursor-pointer">cursor-pointer!!!!</div>
+			<div class="cursor-text">cursor-text!!!!</div>
+			<div class="cursor-crosshair">cursor-crosshair!!!!</div>
+			
+			
+			</div>
+
+			
+			</section>
+			
+			<section id="round_ex">
+				<h2>Rounded Corners</h2>
+				<p>Border radius - allows us to create rounded corners for elements.</p>
+				<div class="section-padding rounded_corner"> Rounded Corners</div>
+				<pre class="text-primary">
+{
+border-radius: 20px;
+}
+				</pre>			
+			
+			</section>
+			
+			<section id="shadow_ex">
+			<h2>Box Shadow</h2>
+			<p>Used to add shadow effects to elements,Following is the example to add shadow effects to element.<br/>
+			box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+			</p>
+			<pre class="text-primary">
+{
+width: 300px;
+height: 100px;
+padding: 15px;
+background-color: rgba(0,0,0,0.5);
+box-shadow: 2px 1px 15px #fff;
+}			
+			</pre>
+			<div class="shadow-ex">
+			This is a div element with a box-shadow
+			</div>
+			</section>
+			<section id="txtshadow_ex">
+			<h2>Text Shadow</h2>
+			<p>CSS3 supported to add shadow effects to text. Following is the example to add shadow effects to text</p>
+			<pre class="text-primary">
+{
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}			
+			</pre>
+			<div class="txtshadow-ex">
+			<h6>Text Shadow</h6>
+			</div>
+			</section>
+			<section id="multiCol_ex">
+			<h2>Multi Column</h2>
+              <p>CSS3 supported multi columns to arrange the text as news paper structure.</p>
+			<pre class="text-primary">
+{
+/* Column count property */
+-webkit-column-count: 4;
+-moz-column-count: 4;
+column-count: 4;
+
+/* Column gap property */
+-webkit-column-gap: 40px; 
+-moz-column-gap: 40px; 
+column-gap: 40px;
+
+/* Column style property */
+-webkit-column-rule-style: solid; 
+-moz-column-rule-style: solid; 
+column-rule-style: solid;
+}
+			</pre>
+           <div class="multiCol-ex">
+		   <div class="multi">
+				Point originated from the idea that there exists a class of readers who respond 
+				better to online content and prefer to learn new skills at their own pace from the comforts 
+				of their drawing rooms. The journey commenced with a single tutorial on HTML in 2006 and 
+				elated by the response it generated, we worked our way to adding fresh tutorials to our 
+				repository which now proudly flaunts a wealth of tutorials and allied articles on topics
+				ranging from programming languages to web designing to academics and much more.
+			</div>
+		   
+		   </div>			
+			</section>
+						<section id="transform_ex">
+			<h2>Transform Property</h2>
+			<p>2D transforms are used to re-change the element structure as translate, rotate, scale, and skew</p>
+			<p>The 2D transformation methods are as follows:
+
+					translate()
+					rotate()
+					scale()
+					skewX()
+					skewY()
+					matrix()
+			</p>
+			
+			<pre class="text-primary">
+
+{			
+width: 300px;
+height: 100px;
+background-color: #fafafa;
+border: 1px solid black;
+
+/* IE 9 */
+-ms-transform: rotate(20deg);
+
+/* Safari */
+-webkit-transform: rotate(20deg);
+
+/* Standard syntax */
+transform: rotate(20deg);
+}
+
+.translate {
+-ms-transform: translate(25px, 50px); /* IE 9 */
+-webkit-transform: translate(25px, 50px); /* Safari */
+transform: translate(25px, 50px);
+}
+
+.scale{
+-ms-transform: scale(0.5, 0.5); /* IE 9 */
+-webkit-transform: scale(0.5, 0.5); /* Safari */
+transform: scale(0.5, 0.5);
+}
+
+.skewXaxis {
+-ms-transform: skewX(10deg); /* IE 9 */
+-webkit-transform: skewX(10deg); /* Safari */
+transform: skewX(10deg);
+}
+
+.skewYaxis {
+-ms-transform: skewY(10deg); /* IE 9 */
+-webkit-transform: skewY(10deg); /* Safari */
+transform: skewY(10deg);
+}
+
+.skew{
+-ms-transform: skew(10deg, 10deg); /* IE 9 */
+-webkit-transform: skew(10deg, 10deg); /* Safari */
+transform: skew(10deg, 10deg);
+}
+.matrix{
+-ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+-webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+/* above example of matrix:-  matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+
+			</pre>
+			<div class="row">
+			<div class="transform-ex col-sm-12">
+				<div class="rotate">
+				Box Rotate at 20 degree
+				</div>
+			<div class="translate">
+				translate
+				</div>
+				<div class="scale">
+				scale
+				</div>
+				<div class="skewXaxis">
+				skewXaxis
+				</div>
+				<div class="skewYaxis">
+				skewYaxis
+				</div>
+				<div class="matrix">
+				matrix
+				</div>
+			</div>
+			</div>
+
+			</section>
+			
+            <section id="transition_ex">
+                <h2>Transition Property</h2>
+                <p>A transition to take place, an element must have a change in state, and different styles must be identified for each state. The easiest way for determining styles for different states is by using the :hover, :focus, :active, and :target pseudo-classes. There are four transition related properties in total, including transition-property, transition-duration, transition-timing-function, and transition-delay.
+                </p>
+                <div class="transition-ex">
+                    <table class="collapse">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>transition
+                                </td>
+                                <td>A shorthand property for setting all the four individual transition properties in a single declaration.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>transition-delay
+
+                                </td>
+                                <td>Specifies when the transition will start.
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>transition-duration
+
+                                </td>
+                                <td>Specifies the number of seconds or milliseconds a transition animation should take to complete.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>transition-property
+
+                                </td>
+                                <td>Specifies the names of the CSS properties to which a transition effect should be applied.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>transition-timing-function
+
+                                </td>
+                                <td>Specifies how the intermediate values of the CSS properties being affected by a transition will?be?calculated.
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Example</h2>
+                    <h3>Box 1</h3>
+                    <pre class="text-primary">
+.transition-ex .box {
+background: #2db34a;
+transition-property: background;
+transition-duration: 1s;
+transition-timing-function: linear;
+cursor: pointer;
+}
+.transition-ex li.box:hover {
+background: #ff7b29;
+}
+					</pre>
+                    <ul>
+                        <li class="box"> Box </li>
+                        <li class="box2">Box 2</li>
+                    </ul>
+                    <h3>Box 2</h3>
+                    <pre class="text-primary">
+.transition-ex .box2 {
+background: #2db34a;
+border-radius: 6px;
+transition-property: background, border-radius;
+transition-duration: 1s;
+transition-timing-function: linear;
+cursor: pointer;
+}
+.transition-ex li.box2:hover {
+background: #ff7b29;
+border-radius: 50%;
+}
+					</pre>
+                </div>
+
+            </section>
+            <section id="animation_ex">
+                <h2>Animation</h2>
+                <p>Transitions do a great job of building out visual interactions from one state to another, and are perfect for these kinds of single state changes. However, when more control is required, transitions need to have multiple states. In return, this is where animations pick up where transitions leave off.
+                    <br/>
+                    <h3>Animations  Keyframes</h3> To set multiple points at which an element should undergo a transition, use the @keyframes rule. The @keyframes rule includes the animation name, any animation breakpoints, and the properties intended to be animated.
+
+                </p>
+
+                <div class="animation-ex">
+                    <p>
+                        <h4>Animation Name</h4> Once the keyframes for an animation have been declared they need to be assigned to an element.
+                        <br/> To do so, the animation-name property is used with the animation name, identified from the @keyframes rule, as the property value.
+
+                        <h4>Animations Duration, Timing  Function, & Delay</h4> Once you have declared the animation-name property on an element, animations behave similarly to transitions.
+                        <br/> They include a duration, timing function, and delay if desired. To start, animations need a duration declared using the animation-duration property.
+                        <br/> A timing function and delay can be declared using the animation-timing-function and animation-delay properties respectively.
+                        <br/>
+
+                    </p>
+                    <pre class="text-primary">
+.animation-ex .stage {
+ border:2px solid #fff;
+  height: 180px;
+  position: relative;
+  width: 500px;
+}
+.animation-ex .ball {
+  background: #2db34a;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  cursor: pointer;
+}
+.animation-ex .stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 388px;
+    top: 0;
+  }
+}
+					</pre>
+                    <div class="stage">
+                        <figure class="ball"></figure>
+                    </div>
+                    <div>
+                        <h3>Customize Animation Example</h3>
+
+                        <h4>Animation  Iteration</h4>
+                        <p>By default, animations run their cycle once from beginning to end and then stop. To have an animation repeat itself numerous times the animation-iteration-count property may be used. Values for the animation-iteration-count property include either an integer or the infinite keyword.
+                        </p>
+                        <h4>Animation Direction</h4>
+                        <p>On top of being able to set the number of times an animation repeats, you may also declare the direction an animation completes using the animation-direction property. Values for the animation-direction property include normal, reverse, alternate, and alternate-reverse.</p>
+                        <h4>Animation Play State</h4>
+                        <p>The animation-play-state property allows an animation to be played or paused using the running and paused keyword values respectively. When you play a paused animation, it will resume running from its current state rather than starting from the very beginning again.</p>
+                        <h4>Animation Fill Mode</h4>
+                        <p>The animation-fill-mode property identifies how an element should be styled either before, after, or before and after an animation is run. The animation-fill-mode property accepts four keyword values, including none, forwards, backwards, and both.
+                        </p>
+                        <pre class="text-primary">
+.animation-ex  .element i{position:absolute; top:30%; left:35%;}
+.animation-ex  .element{
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  position:relative;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(1.0);
+    background-color: yellow;
+  }
+}
+</pre>
+                        <div class="element"><i class="fa fa-apple fa-3x"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+        <div class="top-link"><a href="#float"><i class="fa fa fa-angle-double-up fa-fw fa-2x"></i></a>
+        </div>
+		</div>
+		</div>
+		
+				
+			</div>
+		</main>
+
+		<nav id="nav">
+			<div class="innertube">
+				
+				<aside class="sidebar">
+				<h4 class="headingSide">Basic Properties</h4>
+            <ul>
+                <li class="active"><a href="#float" ><i class="fa fa-hand-o-right fa-fw"></i> Float</a></li>
+                <li><a href="#background"><i class="fa fa-hand-o-right fa-fw"></i> Background</a></li>
+				<li><a href="#border"><i class="fa fa-hand-o-right fa-fw"></i> Border</a></li>
+                <li><a href="#color_ex"><i class="fa fa-hand-o-right fa-fw"></i> Color</a></li>
+                <li><a href="#font_ex"><i class="fa fa-hand-o-right fa-fw"></i> Font</a></li>
+				 <li><a href="#dimension_ex"><i class="fa fa-hand-o-right fa-fw"></i>Css Dimension</a></li>
+                <li><a href="#list_ex"><i class="fa fa-hand-o-right fa-fw"></i> List</a></li>
+                <li><a href="#display_ex"><i class="fa fa-hand-o-right fa-fw"></i> Display</a></li>
+				<li><a href="#text_ex"><i class="fa fa-hand-o-right fa-fw"></i> Text</a></li>
+			</ul>
+               <h4 class="headingSide">Advanced Properties</h4>
+			<ul>				
+				<li><a href="#position_ex"><i class="fa fa-hand-o-right fa-fw"></i> Position</a></li>
+                <li><a href="#pseudo_ex"><i class="fa fa-hand-o-right fa-fw"></i> Pseudo Class & Element</a></li>
+                <li><a href="#table_ex"><i class="fa fa-hand-o-right fa-fw"></i> Table</a></li>
+				<li><a href="#grad_ex"><i class="fa fa-hand-o-right fa-fw"></i> Gradient</a></li>
+				<li><a href="#cursor_ex"><i class="fa fa-hand-o-right fa-fw"></i> Cursor</a></li>
+				<li><a href="#round_ex"><i class="fa fa-hand-o-right fa-fw"></i> Rounded corners</a></li>
+				<li><a href="#shadow_ex"><i class="fa fa-hand-o-right fa-fw"></i> Box shadow</a></li>
+				<li><a href="#txtshadow_ex"><i class="fa fa-hand-o-right fa-fw"></i> Text shadow</a></li>
+				<li><a href="#multiCol_ex"><i class="fa fa-hand-o-right fa-fw"></i> Multi column</a></li>
+				<li><a href="#transform_ex"><i class="fa fa-hand-o-right fa-fw"></i> Transform</a></li>
+				<li><a href="#transition_ex"><i class="fa fa-hand-o-right fa-fw"></i> Transition</a></li>
+                <li><a href="#animation_ex"><i class="fa fa-hand-o-right fa-fw"></i> Animation</a></li>
+			</ul>
+
+        </aside>
+			</div>
+		</nav>	
+		
+		<footer id="footer">
+			<div class="innertube">
+				<p class="text-center">Copyright &copy; 2018</p>
+			</div>
+		</footer>	
+		<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 100, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>	
+	</body>
+</html>	
