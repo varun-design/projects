@@ -136,6 +136,7 @@ background-color: #00897B;
 list-style-type: none;
 border-bottom: 1px solid #fff;
 cursor: pointer;
+margin: 0 -20px;
 }
 .sidebar ul li:last-child {
 border-bottom: none;
@@ -143,7 +144,7 @@ border-bottom: none;
 .sidebar ul li a {
 text-decoration: none;
 color: #fff;
-padding: 2px;
+padding: 0 20px;
 word-wrap: break-word;
 display: block;
 font-size: 1.5rem;
